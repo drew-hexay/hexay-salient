@@ -34,8 +34,8 @@ export default function Home() {
         <HeroWithProduct />
         {/* <Banner /> */}
         <LogoCloud />
-        <TestimonialsSimple />
         <Resources />
+        <TestimonialsSimple />
         <FeatureSectionTwo />
 
         {/* <PrimaryFeatures /> */}
