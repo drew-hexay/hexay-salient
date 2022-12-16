@@ -46,12 +46,12 @@ export function HeroWithProduct() {
                             <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
                         </pattern>
                     </defs>
-                    <rect y={72} width={640} height={640} className="text-gray-50" fill="currentColor" />
+                    <rect y={72} width={640} height={600} className="text-gray-50" fill="currentColor" />
                     <rect x={118} width={404} height={784} fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)" />
                 </svg>
             </div>
 
-            <div className="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
+            <div className="relative pt-6 pb-16 sm:pb-24 lg:pb-10">
                 <Popover>
                     <nav
                         className="relative mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6"
@@ -158,7 +158,7 @@ export function HeroWithProduct() {
                                 className="inline-flex items-center rounded-full bg-indigo-50 p-1 pr-2 text-indigo-600 hover:text-gray-200 sm:text-base lg:text-sm xl:text-base"
                             >
                                 <span className="ml-4 text-sm">Recommended by Maquette Advisors</span>
-                                <ChevronRightIcon className="ml-2 h-5 w-5 text-indigo-600" aria-hidden="true" />
+                                <ChevronRightIcon className="ml-2 h-5 w-5 text-gray-500" aria-hidden="true" />
                             </a>
                             <h1>
                                 {/* <span className="block text-base font-semibold text-gray-500 sm:text-lg lg:text-base xl:text-lg">

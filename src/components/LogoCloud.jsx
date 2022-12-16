@@ -1,7 +1,7 @@
 export function LogoCloud() {
     return (
         <div className="bg-white">
-            <div className="mx-auto max-w-7xl py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl py-16 px-9 sm:py-16 sm:px-6 lg:px-8">
                 <h2 className="text-center text-2xl font-bold tracking-tight text-gray-500">
                     Backed by operators from
                 </h2>
