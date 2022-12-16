@@ -14,7 +14,7 @@
 */
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
     { name: 'Product', href: '#' },
@@ -78,7 +78,15 @@ export function HeroWithProduct() {
                             <span className="ml-3 mt-1 block text-4xl font-bold tracking-tight sm:text-5xl xl:text-4xl block text-grey-600">
                                 Hexay
                             </span>
+                            <div className="hidden md:ml-10 md:block md:space-x-10">
+                                {navigation.map((item) => (
+                                    <a key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900">
+                                        {item.name}
+                                    </a>
+                                ))}
+                            </div>
                         </div>
+
                         <div className="hidden text-right md:block">
                             <span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
                                 <a
@@ -145,18 +153,24 @@ export function HeroWithProduct() {
                 <main className="mx-auto mt-16 max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32">
                     <div className="lg:grid lg:grid-cols-12 lg:gap-8">
                         <div className="sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:text-left">
+                            <a
+                                href="#"
+                                className="inline-flex items-center rounded-full bg-indigo-50 p-1 pr-2 text-indigo-600 hover:text-gray-200 sm:text-base lg:text-sm xl:text-base"
+                            >
+                                <span className="ml-4 text-sm">Recommended by Maquette Advisors</span>
+                                <ChevronRightIcon className="ml-2 h-5 w-5 text-indigo-600" aria-hidden="true" />
+                            </a>
                             <h1>
-                                <span className="block text-base font-semibold text-gray-500 sm:text-lg lg:text-base xl:text-lg">
+                                {/* <span className="block text-base font-semibold text-gray-500 sm:text-lg lg:text-base xl:text-lg">
                                     Coming soon
-                                </span>
+                                </span> */}
                                 <span className="mt-1 block text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl">
                                     <span className="block text-gray-900">Compliance as your</span>
                                     <span className="block text-indigo-600">company advantage</span>
                                 </span>
                             </h1>
                             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                                fugiat veniam occaecat fugiat aliqua ad ad non deserunt sunt.
+                                Anim aute id magna aliqua ad ad non deserunt sunt
                             </p>
                             <div className="mt-8 sm:mx-auto sm:max-w-lg sm:text-center lg:mx-0 lg:text-left">
                                 <p className="text-base font-medium text-gray-900">Apply for access when we launch</p>
@@ -229,5 +243,6 @@ export function HeroWithProduct() {
                 </main>
             </div>
         </div>
+
     )
 }

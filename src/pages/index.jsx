@@ -2,6 +2,9 @@ import Head from 'next/head'
 
 import { HeroWithProduct } from '@/components/HeroWithProduct'
 import { Banner } from '@/components/Banner'
+import { TestimonialsSimple } from '@/components/TestimonialsSimple'
+import { LogoCloud } from '@/components/LogoCloud'
+import { Resources } from '@/components/Resources'
 
 import { CallToAction } from '@/components/CallToAction'
 import { Faqs } from '@/components/Faqs'
@@ -29,9 +32,10 @@ export default function Home() {
       {/* <HeaderSimple /> */}
       <main>
         <HeroWithProduct />
-        <Banner />
-        <FeatureSectionThree />
-        <FeatureSectionOne />
+        {/* <Banner /> */}
+        <LogoCloud />
+        <TestimonialsSimple />
+        <Resources />
         <FeatureSectionTwo />
 
         {/* <PrimaryFeatures /> */}
