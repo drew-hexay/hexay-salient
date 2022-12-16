@@ -1,5 +1,8 @@
 import Head from 'next/head'
 
+import { HeroWithProduct } from '@/components/HeroWithProduct'
+import { Banner } from '@/components/Banner'
+
 import { CallToAction } from '@/components/CallToAction'
 import { Faqs } from '@/components/Faqs'
 import { Footer } from '@/components/Footer'
@@ -23,9 +26,10 @@ export default function Home() {
           content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited."
         />
       </Head>
-      <Header />
+      {/* <HeaderSimple /> */}
       <main>
-        <Hero />
+        <HeroWithProduct />
+        <Banner />
         <FeatureSectionThree />
         <FeatureSectionOne />
         <FeatureSectionTwo />
